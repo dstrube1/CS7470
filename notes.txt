@@ -1,0 +1,210 @@
+Krumm:
+A user or device context is difficult to model because it has many dimensions, such as location, the identity of devices close by, who else is present, the time, and environmental factors such as sound, motion, temperature, orientation, and other physical variables, many of which can be measured through on-platform sensors
+
+the cache principle: files that had been used at a location in the past were likely to be useful again
+
+typo on pg 287:
+while helping distill why certain design decisions where made for each system
+
+ideas:
+floor sensors at elevator (don't share until patented)
+bluetooth audio transmitters for hiking
+ubicomp at grocery / mall
+car service like dominos indicating how far along in service process
+courthouse
+3d map for navigating parking deck or mall
+glove for controlling devices (lights, garage door, tv) in a room
+	non-dominant hand so as to not accidentally activate
+	few gestures (thumb, index, thumb+index) to select
+	one gesture to activate / confirm (all fingers out, then fist)
+	room-dependent behavior
+	programmable - assign behavior to gesture
+location aware headphones for museum tours
+
+Cyberguide from Georgia Tech used NCR Wavelan radios compatible with the 802.11b standard (new at that time), and took advantage of the characteristic poor radio propagation to create servers that covered a region called a cell
+
+ABC: Activity-based computing
+ACM: Association of Computing Machinery
+AP: access points
+APIs: application programming interfaces
+CHI: Computer–Human Interaction
+CTS: Compatibility Test Suite
+DoF: degrees of freedom
+ECG: Electrocardiogram
+Fc: Coriolis force
+FLP: Fused location provider
+FOV: Field of view
+GPS: global positioning system
+GNSS: Global Navigation Satellite System
+GSR: Galvanic Skin Response
+HUC: Handheld and Ubiquitous Computing -> UbiComp
+HUD: Heads up display (e.g., windshield projection)
+HWD: Head worn display
+IEEE: Institute of Electrical and Electronics Engineers
+IMS: Infrastructure Mediated Sensing
+IMU: inertial measurement unit (accelerometer, gyroscope, and magnetometer)
+IRS: Intel Research Seattle
+ISWC: International Symposium on Wearable Computing
+JCAF: Java Context-Awareness Framework
+LDR: light dependent resistor
+LoCA: Location and Context Aware
+MANETs: mobile ad hoc sensor networks
+MEMS: Micro-electronic mechanical systems - accelerometer
+Mobi CASe: Mobile Computing, Applications, and Services
+MobiCom: Mobile Computing and Networking Communications conference
+MobileHCI: Human–Computer Interaction for Mobile Devices
+MSR: Microsoft Research
+MT: Movement time (Fitt's law)
+MUD: multiuser dungeon
+NS-2: Network simulator
+OSGI: Open services gateway initiative
+PARC: Palo Alto Research Center
+PoC: proof-of-concept
+POMPD: Partially observable Markov decision process
+PPG: Photoplethysmography, aka pulse oximeter or blood pressure?
+PWM: Pulse Width Modulation
+RSSI: received signal strength indication
+TEI: Tangible and Embedded Interaction
+TFT: thin-film-transistor
+TLX: Task Load Index
+TOIS: Transactions on Office Information Systems
+UIST: User Interface Software and Technology
+URI: uniform resource identifier
+VIR: voltage (volt), current (amp), resistance (ohm)
+WIMP: Windows, Menu, Icon, & Pointer interface
+WMCSA: Workshop on Mobile Computing Systems and Applications -> HotMobile
+
+"Scientiἀc"?
+
+leftoff: p97
+
+===
+Weiser 1991:
+other names for UbiComp:
+compiling
+tacit dimension
+visual invariants
+the horizon
+ready-to-hand
+the periphery
+embodied virtuality
+
+two issues of crucial importance: location and scale
+a device can change its behavior based on where it is (eg, what room)
+
+UbiComp technology requires:
+1- cheap low power computer with convenient displays
+2- software / OS
+3- networking
+===
+Abowd2000:
+three interaction themes: 
+	natural interfaces, context-aware applications, and automated capture and access
+research areas for error handling of recognition-based interfaces:
+	Error reduction
+	Error discovery:
+		3 techniques: 
+			thresholding of confidence measures
+			historical statistics
+			explicit rule specification
+	Reusable infrastructure for error correction
+five Ws of context:
+	Who: user and surrounding people
+	What: what the user is doing
+	Where
+	When: date, time, and short or long history; changes in times spent at a sequence of locations; changes in a pattern of behavior
+	Why: why someone does what they're doing- body temperature, heart rate, and galvanic skin response,
+===
+1998: Kevin Ashton: "Internet of Things"
+Key To Context-Aware Computing, @8:10: what is A/D?
+
+speakers can be microphones and microphones can be speakers
+sensors can be manipulators and manipulators can be sensors
+
+===
+
+2V / 0.02A = 100 ohms
+P = I * V
+P : power, measured in watts = current * voltage
+P = I^2 * R = current squared * resistance
+
+===
+GoFitts.jar how to:
+1- cd to the dir:
+cd "/Users/dstrube/Projects/CS7470/lessons/Module 7 - Intro HCI, Gestures/"
+2- run this:
+java -jar GoFitts.jar
+===
+latitude: parallel, degrees N or S
+longitude: meridian, degrees E or W
+geocoder: translates address or zip to coordinate
+reverse geocoder: translates coordinate to address or zip 
+location: absolute (lat & lon), relative (eg 100 meters north of an address), or symbolic (place name, eg the mall)
+6 techniques for determining the location: 
+	1- proximity
+	2- trilateration
+	3- hyperbolic lateration
+	4- triangulation
+	5- fingerprinting
+	6- dead reckoning
+
+ leftoff: p 290 (in book), 305 (in file)
+===
+DrawRun
+twotothefifth
+[
+when creating new Android project, very annoying problems kept popping up:
+
+1- could not create parent directory for lock file 
+/~/.gradle/wrapper/dists/gradle-8.0-bin/ca5e32bp14vu59qr306oxotwh/gradle-8.0-bin.zip.lck 
+
+Solution: In Android Studio-> Preferences-> Build, Execution, Deployment-> Build Tools-> Gradle, change "Use Gradle from:" from "'gradle-wrapper.properties' file"  to Specified location; use location from `brew update gradle` or `brew upgrade gradle`: /usr/local/Cellar/gradle/8.1.1/libexec
+
+2- In Build view, got this unhelpful error: "Could not find file"
+No mention of what file or where it was looking -_-
+
+Solution: in the same path as above (Android Studio-> Preferences-> Build, Execution, Deployment-> Build Tools-> Gradle), in Gradle user home, replace `~/.gradle` with the full path, e.g., /Users/dstrube/.gradle
+
+3- Some new project templates (e.g., Empty View Activity) will give you the option to select the language before beginning creation of the project; others (e.g., Empty Activity) do not and default to Kotlin (less familiar and popular)
+]
+
+TODO: splash screen - https://developer.android.com/develop/ui/views/launch/splash-screen
+options: single player / multiplayer
+multiplayer: Coming soon
+single player: Choose shape: Square, Triangle, Circle, Make your own, Random
+Make your own: Coming soon
+Square, Triangle, Circle, Random-> Show map, show drawing of guidelines, show done: Great job!
+Share with other players?: Coming soon
+Share with social media: Facebook, Twitter, Instagram, TikTok, YouTube: Coming soon
+
+interesting code:
+audiblecards.controller - MainActivity
+currentweather.controller - MainActivity
+===
+
+Challenges:
+Google Maps doesn't make it easy to draw a path on a map
+Internet connectivity may be required by the app but unreliable
+Finding participants, time, and places to conduct our user study​
+
+Examples of Android Studio bugginess:
+1- When creating a new project, some templates give you a choice of language, some do not
+2- Gradle path "~/.gradle" not recognized, must type it out
+3- Java version not accepted, and unhelpful error "Could not locate file" doesn't tell you what file it's looking for or where it looked
+
+===
+Proxemics: The study of the cultural, behavioral, and sociological aspects of spatial distances between individuals. "personal space"
+
+Justices of the Peace Act (England) - 1361
+“My home is my castle” (William Pitt, England) - 1761
+Privacy as “the right to be let alone” - 1890
+Information Privacy (Westin, USA) 1967
+Personal border crossing as core concept to privacy (Marx, USA) - 2005
+European Union’s General Data Protection Regulation - 2018
+https://www.ics.uci.edu/~djp3/classes/2012_09_INF241/Lectures/Lecture18Slides.pdf
+http://web.mit.edu/gtmarx/www/surandsoc.html
+
+
+ 
+
+ 

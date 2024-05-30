@@ -1,0 +1,150 @@
+Qualitative evaluation of the app using Structured interview
+Final exam:
+1-
+Both vim and emacs are text editors adored by many developers for their keyboard shortcuts which allow veteran users to quickly accomplish powerful commands (search, cut, replace, etc.) without ever needing to use their mouse or trackpad. Which of Jakob Nielsen’s heuristic principles best describes this kind of design?
+	Flexibility and efficiency of use
+
+2-
+Take a look at Apple’s homepage’s drastic change in design between 1997 (https://web.archive.org/web/19970404064352/http://www.apple.com/) and 1998 (https://web.archive.org/web/19980509035420/http://www.apple.com/). The largest change was removing the large “Hot News” section of the website from taking up the majority of the page and making that a separate page while giving prominent space to more relevant information and links. This shift on Apple’s part is to reduce visual overload on their homepage, prioritize its marketing content, and make the best use of its website space to keep the focus of any visitors on checking out their products. This change is best described by which one of Nielsen’s principles?
+	Aesthetic and minimalist design
+
+3-
+You are working on a team with Timmy Appleseed developing a new gesture system for Project Magenta, a secret new head-worn display at a large company to compete with the likes of Microsoft Hololens and Meta’s Oculus products. Timmy mentions he is concerned with the “recognition rather than recall” principle with the gesture interface of your head-worn display. Which of these interactions with the HWD is he most likely thinking about?
+	At any given moment, there are several buttons that can always be seen in the peripheral of a user and can be selected by the user “pinching” at them. Yet the meaning of these buttons is not immediately interpretable by their icon, and there is no way to see what their function is without actually selecting the button itself.
+
+*********************************************************************************************************************
+*********************************************************************************************************************
+*********************************************************************************************************************
+ethnography: mentioned in Module 8 in PROMPT: Qualitative Research Methods
+as a formative research method
+and also at the end of the lesson Cognitive Walkthrough, Heuristic Evaluation, and Tools
+Also in Chapter 5 of the textbook, but I didn't see that in any required reading
+Nothing mentioning principles of ethnography, except this reference:
+https://www.taylorfrancis.com/books/mono/10.4324/9781315146027/ethnography-martyn-hammersley-paul-atkinson
+I downloaded this and there is no mention there of Holism
+
+*********************************************************************************************************************
+*********************************************************************************************************************
+*********************************************************************************************************************
+
+4- 
+You are designing a user interface for an application that will be used in a hospital by doctors, nurses, and the hospital administration. Each group will utilize the entire application, but will likely need to focus on different parts of the application. It is important to see how individuals in each group interact with and respond to the interface. Which principle of ethnography does this embody?
+	None of the principles of ethnography describe this.
+	Natural setting
+Descriptive
+Holism
+Subjective point of view
+
+5-
+You are designing a head-worn display for construction workers which will have several new safety features and use augmented reality to guide workers on what they need in order to efficiently and safely complete their work. Your colleague suggests building a mock construction environment in the lab and asking construction workers to come in and complete the task in the lab to study common construction work issues. You, on the other hand, would rather shadow a group of construction workers throughout an entire workday: from arriving, throughout their breaks, and until they leave to go back home. Which of the following answers best describes which ethnographic principles are at play in your study decision compared to your labmates’?
+Subjective point of view
+Holism
+	Natural setting and Subjective point of view
+	Natural setting and Holism
+Natural setting
+
+Part 2) Smart Homes and Special Needs
+Smart homes, equipped with Internet enabled devices, have reappeared in Ubicomp research and are now very popular for consumers and regular, private home owners.
+Consider the design of a system to support smart home residents for aging in place. The objective is to facilitate and manage context specific interactions in such smart homes.
+You can design the system across different device based applications. These devices should include sensing capabilities such as the user's biometrics, location, and other contextual activities (e.g., detect the user is playing a game on their smartphone app while the TV is on.)
+
+6-
+Define your audience's needs with a set of tasks. Describe and motivate one or more application(s) that support your users. Support your system’s features with a corresponding description of the data collection process, technical infrastructure, and ongoing maintenance. Note: word limit 120.
+
+Define the audience's needs: the iterative cycle of human centered design: observe, then brainstorm, then prototype and test ideas; repeat as necessary. Application idea: a bracelet that monitors the heart rate and location of residents for their health and safety. Data collection & infrastructure: the device could report via wifi to a local server that hosts a web application viewable only at a central location where the staff could see if a resident was having heart rate problems, and if so, use the device's last known location to find the resident and deliver medical care. Ongoing maintenance: repair if a device is damaged or replacement if it is lost, and wifi troubleshooting for device network communications. 
+
+7-
+Based upon the Ubicomp literature you have explored throughout our class, briefly outline the challenges in capturing context, user privacy, and usability. Pinpoint these challenges in your system for each of your application(s). List the literature your answer is based upon. Note: word limit 150 (to accommodate for reference list).
+
+The challenges in capturing context knowing who goes with which device, and knowing where they are if they are in a crowded space if device's location isn't accurate enough to pick them out of a crowd.
+The challenges in user privacy would getting informed consent from the users, balancing identifiability with functionality, and making sure the data stays local and secure.
+The challenge in usability would be is the device light enough to not be a burden.
+Here is the literature my answer is based upon: 
+A. Schmidt, M. Beigl, and H. Gellersen. (1999). There is more to context than location. Computers & Graphics. Volume 23, Issue 6, pp 893-901.
+M. Langheinrich. (2001). Privacy by Design — Principles of Privacy-Aware Ubiquitous Systems. Ubiquitous Computing pp 273–291.
+Zeagler, C., Gandy, M., Baker, P.M.A. (2018). The Assistive Wearable: Inclusive by Design. Assistive Technology Outcomes and Benefits, Volume 12 (Summer) 11-36.
+
+8-
+Suggest a solution for any one of the above challenges of your choice. Provide examples to support your perspective. You can take the point of view of a system designer or a usability specialist. Justify your position. Note: word limit 200.
+
+From the point of view of a system designer, I'm proposing a solution to the problem of making sure the data stays local and secure. To recap, the device would report via wifi to a local server that hosts a web application viewable only at a central location. The wifi component is one of the biggest potential security leaks, as the device would be broadcasting its location over the air. The device could transmit only encrypted data, including the user's heart rate and latitude and longitude. To anonymize this data, the user's data would be identified by a nonsensitive identifier (e.g., not their SSN). Another point of failure would the central server. It must be dedicated only to serving the web application that displays the residents' heart rates and location, have access restricted to authorized personnel, and get regular security patch updates. The web application would be vetted by a 3rd party security firm (after it signs a non-disclosure agreement) that would be used to verify the application is securely designed and implemented.
+
+
+Part 3) Privacy in Voice Assistant Scenarios
+Privacy in mobile and ubiquitous computing scenarios has been discussed on many occasions during the class. In fact, some consider privacy as the most crucial and critical aspect of current and future generations of computing. This question asks you to reflect upon privacy concerns and how to constructively address them in contemporary ubicomp settings.
+Remember the word limit for each sub-question!
+Voice assistants like Amazon Alexa, Google Home, or Apple Homepod, are now widely used in many private households. However, despite their practical value, they have caused concerns with regard to privacy. 
+________________________________________________
+Part 3, Q1. 
+Choose one of the current existing voice assistants and evaluate it against the different principles of privacy by design (PbD). 
+
+
+9-
+Which system did you choose? Why? Briefly describe the application scenario/system use case. Note: word limit 60.
+I initially chose Alex because it has the largest marketshare, but I don't own an Alexa device, or any of the others listed above. I have an iPhone, and I rarely use Siri, but when I do use it, I use for basic internet searches while driving because searching by voice is safer than typing while driving.
+
+10-
+Assess the system with regards to Langheinrich’s privacy by design criteria – how does it fare for each of them? Note: word limit 120. 
+Answer template: 
+<PbD principle (1 word)>: <does the chosen system address the principle and if so how, if not: why not>
+Notice: Yes, when setting up Siri, you're presented with a privacy policy that explains how Apple collects, uses, and shares your data.
+Choice and consent: Yes, you can choose which data Siri uses. For example, you can choose whether Siri accesses contacts, calendar, location, and your voice recordings.
+Identifiability: Yes, all data sent to Apple from Siri is anonymized.
+Proximity and Locality: Yes, there is an option to only process voice commands on your device instead of sending them to Apple's servers.
+Security: Yes, all data sent to Apple from Siri is encrypted, and Apple's servers have many security measures.
+Access and recourse: Yes, you can request that Apple delete your voice recordings at any time.
+
+Part 3, Q2.
+As discussed during class, privacy (or the lack thereof) is often linked to awareness as many users often do not oversee potential privacy implications of mobile and ubiquitous technology such as voice assistants in private homes. 
+Imagine you are working for a company such as Amazon or Google who sells Ubicomp technology such as voice assistants for private homes. Using Langheinrich’s PbD framework:
+
+11-
+Elaborate on any changes you can make, with your expertise in both the technical concepts and potential privacy implications of such technology, that can help retain your customers’ privacy and raise your customers’ awareness of any 3 PbD principles of your choice. Note: word limit 120.
+
+Identifiability: Add the feature to allow a user to see their unique identifier, and provide them with the ability to change it at anytime if their chosen identifier is not already in use.
+Security: At the location of the company's servers, add layers of physical security like mechanical (metal key), logical (RSA or TFA key) and biometric (fingerprint and/or retina scan and/or voice scan) authentication, motion sensors, and video surveillance.
+Access and recourse: Allow user not only to delete their personal data, but also choose which of their data to delete and which to keep.
+
+12-
+How would your system modifications conflict with the aims of your employer and how can you find a compromise that satisfies both the customer while still enabling the company to make profits? Note: word limit 120.
+
+All of these measures will add to the company's overhead and operating costs. However, once the public knows that these serious and intense privacy measures are in place, that will make the company more popular thus attracting more customers which will lead to higher profits.
+
+Part 3, Q3.
+Now that you have designed a more privacy-sensitive voice assistant (part 2), how would you evaluate it (e.g. threat models)? Make sure your answer covers technical as well as perceptual aspects as they pertain to privacy. Note: word limit 120
+
+13-
+a. What / who are the threats?
+The threats are any malicious actors who can steal the identity of users for their own usage and profit, or blackmail, or to sell the information to other entities like the information black market or the media.
+
+b. Why does the information need to be protected?
+Information need to be protected because it is valuable and used to operate day-to-day life.
+
+c. What are the consequences if your system fails?
+If the system fails, then people can lose their money, job, friends and family, or their life (e.g., if a blackmailer isn't paid and turns violent).
+
+d. How are the threats addressed / handled / mitigated?
+Threats are addressed / handled / mitigated first by proactive measures, and when those fail, by law enforcement. Note, law enforcement can be slow and ineffective, so it's vital that proactive measures are as good as they can be.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

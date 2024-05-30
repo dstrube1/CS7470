@@ -1,0 +1,11 @@
+- Your proposal was very well organized and ambitious- I'm very curious to know how things are going with gathering a device's sensor data, specifically the air pressure?
+
+- Is your working demo of the app on github?
+
+- What IDE / programming language are you using?
+
+- I noticed you had some difficulty with switching contexts around the 3:45 - 4:15 mark. We had some difficulty too with audio quality and slide coordination, as you may have noticed in our project update, but I think we did as best we could after about a half dozen takes. About how many takes did you have to go through before you got this final version?
+
+- How did you decide who would narrate the project update?
+
+- It was smart to address your feedback in your project update. (I wish we'd thought to do that, although most of our feedback was minor stuff.) Did you receive any feedback that you didn't address in your project update?
